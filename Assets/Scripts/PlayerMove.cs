@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField]
-    private int speed;
+    public float speed;
     private Rigidbody playerRigidBody;
     // speed*Time.deltaTime
     
@@ -24,5 +23,4 @@ public class PlayerMove : MonoBehaviour
         Vector3 movement = new Vector3(horizontalMovement, 0, verticalMovement);
         playerRigidBody.velocity = movement;
     }
-
 }
